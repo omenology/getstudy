@@ -1,0 +1,308 @@
+import React from "react";
+import { Grid, Typography } from "@material-ui/core/";
+import Datatable from "react-data-table-component";
+
+const columns = [
+  {
+    name: "Age",
+    selector: "age",
+    sortable: true,
+  },
+  {
+    name: "Name",
+    selector: "name",
+    sortable: true,
+  },
+  {
+    name: "Gender",
+    selector: "gender",
+  },
+  {
+    name: "Company",
+    selector: "company",
+  },
+  {
+    name: "Email",
+    selector: "email",
+  },
+  {
+    name: "Phone",
+    selector: "phone",
+  },
+  {
+    name: "Address",
+    selector: "address",
+  },
+];
+
+export default (props) => {
+  const data = [
+    {
+      _id: "5eabb6537c69fc7ae3772c45",
+      age: 39,
+      name: "Lacy Howell",
+      gender: "female",
+      company: "STRALUM",
+      email: "lacyhowell@stralum.com",
+      phone: "+1 (997) 416-3206",
+      address: "965 Front Street, Bowmansville, Wisconsin, 9914",
+    },
+    {
+      _id: "5eabb65320cae84ec01606d2",
+      age: 35,
+      name: "Leigh Becker",
+      gender: "female",
+      company: "ENTHAZE",
+      email: "leighbecker@enthaze.com",
+      phone: "+1 (816) 513-2596",
+      address: "494 Lyme Avenue, Enlow, Iowa, 7644",
+    },
+    {
+      _id: "5eabb6531dc40e0b40c7292f",
+      age: 24,
+      name: "Cook Thornton",
+      gender: "male",
+      company: "IPLAX",
+      email: "cookthornton@iplax.com",
+      phone: "+1 (822) 599-3363",
+      address: "271 Howard Avenue, Greenock, Arizona, 7522",
+    },
+    {
+      _id: "5eabb6538e42d0b85e63bfc7",
+      age: 40,
+      name: "Munoz Gillespie",
+      gender: "male",
+      company: "ZANITY",
+      email: "munozgillespie@zanity.com",
+      phone: "+1 (819) 570-2332",
+      address: "180 Kansas Place, Dixie, Florida, 3685",
+    },
+    {
+      _id: "5eabb65327f49b4b9c23b54b",
+      age: 35,
+      name: "Delia Blake",
+      gender: "female",
+      company: "ZOXY",
+      email: "deliablake@zoxy.com",
+      phone: "+1 (986) 525-3878",
+      address: "527 Madoc Avenue, Chelsea, Washington, 6038",
+    },
+    {
+      _id: "5eabb653f56dbc91b66e5ecb",
+      age: 38,
+      name: "Juliette Hodges",
+      gender: "female",
+      company: "CORIANDER",
+      email: "juliettehodges@coriander.com",
+      phone: "+1 (857) 541-2964",
+      address: "930 Lott Place, Grazierville, Pennsylvania, 7445",
+    },
+    {
+      _id: "5eabb65300a83d4bdefb1115",
+      age: 33,
+      name: "Farley Osborn",
+      gender: "male",
+      company: "DANCERITY",
+      email: "farleyosborn@dancerity.com",
+      phone: "+1 (882) 496-2386",
+      address: "292 Farragut Place, Lowell, Utah, 4134",
+    },
+    {
+      _id: "5eabb653f62cdb17359ad8a5",
+      age: 40,
+      name: "Jasmine Dixon",
+      gender: "female",
+      company: "TALAE",
+      email: "jasminedixon@talae.com",
+      phone: "+1 (968) 479-3655",
+      address: "494 Gerald Court, Rivers, District Of Columbia, 2067",
+    },
+    {
+      _id: "5eabb653bb4c6042041d45d0",
+      age: 21,
+      name: "Rollins Jennings",
+      gender: "male",
+      company: "QUILM",
+      email: "rollinsjennings@quilm.com",
+      phone: "+1 (952) 434-2851",
+      address: "921 Kaufman Place, Thornport, South Carolina, 3626",
+    },
+    {
+      _id: "5eabb6537d5cc12f38335089",
+      age: 34,
+      name: "Crawford Skinner",
+      gender: "male",
+      company: "BEZAL",
+      email: "crawfordskinner@bezal.com",
+      phone: "+1 (887) 550-2825",
+      address: "706 Grand Avenue, Elbert, Vermont, 1240",
+    },
+    {
+      _id: "5eabb773d90c3de679a73915",
+      age: 35,
+      name: "Bernadette Lynch",
+      gender: "female",
+      company: "PROTODYNE",
+      email: "bernadettelynch@protodyne.com",
+      phone: "+1 (992) 569-3404",
+      address: "155 Wolcott Street, Cleary, New Hampshire, 1062",
+    },
+    {
+      _id: "5eabb7736622aba68ea5ec6c",
+      age: 31,
+      name: "Lester Ramos",
+      gender: "male",
+      company: "CALCULA",
+      email: "lesterramos@calcula.com",
+      phone: "+1 (813) 433-2021",
+      address: "574 Hastings Street, Cecilia, American Samoa, 7911",
+    },
+    {
+      _id: "5eabb7739997cb96342c5867",
+      age: 22,
+      name: "Matilda Rice",
+      gender: "female",
+      company: "KIDSTOCK",
+      email: "matildarice@kidstock.com",
+      phone: "+1 (928) 509-2235",
+      address: "826 Hicks Street, Elwood, Missouri, 6261",
+    },
+    {
+      _id: "5eabb77314b2b6b7e5681289",
+      age: 32,
+      name: "Norma Foreman",
+      gender: "female",
+      company: "XERONK",
+      email: "normaforeman@xeronk.com",
+      phone: "+1 (967) 550-2652",
+      address: "720 Highlawn Avenue, Neahkahnie, Palau, 1433",
+    },
+    {
+      _id: "5eabb773e4e2237c772afba6",
+      age: 24,
+      name: "Reyna Salinas",
+      gender: "female",
+      company: "COMVOY",
+      email: "reynasalinas@comvoy.com",
+      phone: "+1 (815) 406-3318",
+      address: "174 Rockaway Parkway, Caron, Massachusetts, 6194",
+    },
+    {
+      _id: "5eabb77361b5226a0112efd5",
+      age: 31,
+      name: "Marie Wright",
+      gender: "female",
+      company: "ROOFORIA",
+      email: "mariewright@rooforia.com",
+      phone: "+1 (907) 430-3629",
+      address: "925 Seigel Street, Waukeenah, Tennessee, 9610",
+    },
+    {
+      _id: "5eabb773dd7c9a3999a10121",
+      age: 39,
+      name: "Juana Rhodes",
+      gender: "female",
+      company: "VIRXO",
+      email: "juanarhodes@virxo.com",
+      phone: "+1 (831) 528-3467",
+      address: "313 Newkirk Placez, Gwynn, Maine, 7716",
+    },
+    {
+      _id: "5eabb773237221de287e97d3",
+      age: 32,
+      name: "Green Gillespie",
+      gender: "male",
+      company: "ENDICIL",
+      email: "greengillespie@endicil.com",
+      phone: "+1 (930) 495-3049",
+      address: "865 Kaufman Place, Naomi, Nebraska, 4797",
+    },
+    {
+      _id: "5eabb7739965ae0a6c1c1183",
+      age: 32,
+      name: "Burris Davis",
+      gender: "male",
+      company: "OBLIQ",
+      email: "burrisdavis@obliq.com",
+      phone: "+1 (989) 569-2967",
+      address: "921 Lyme Avenue, Bagtown, Idaho, 3693",
+    },
+    {
+      _id: "5eabb7737aca839d6c5a7489",
+      age: 33,
+      name: "Howe Duncan",
+      gender: "male",
+      company: "HOMELUX",
+      email: "howeduncan@homelux.com",
+      phone: "+1 (886) 557-2399",
+      address: "583 Hendrickson Street, Deseret, Indiana, 9641",
+    },
+    {
+      _id: "5eabb773b52f00869f14f8d1",
+      age: 34,
+      name: "Brock Ortiz",
+      gender: "male",
+      company: "MAGMINA",
+      email: "brockortiz@magmina.com",
+      phone: "+1 (944) 565-2487",
+      address: "664 Duffield Street, Basye, Pennsylvania, 6363",
+    },
+    {
+      _id: "5eabb7739df78e8d0eca4809",
+      age: 21,
+      name: "Beth Travis",
+      gender: "female",
+      company: "GYNKO",
+      email: "bethtravis@gynko.com",
+      phone: "+1 (851) 420-2546",
+      address: "356 Cobek Court, Ripley, Rhode Island, 4075",
+    },
+    {
+      _id: "5eabb77300019fa23c3d027f",
+      age: 27,
+      name: "Maryann Garner",
+      gender: "female",
+      company: "GORGANIC",
+      email: "maryanngarner@gorganic.com",
+      phone: "+1 (904) 591-2005",
+      address: "551 Corbin Place, Klondike, Minnesota, 8801",
+    },
+    {
+      _id: "5eabb77374e5642aa7c79df4",
+      age: 40,
+      name: "Stuart James",
+      gender: "male",
+      company: "MARTGO",
+      email: "stuartjames@martgo.com",
+      phone: "+1 (924) 407-3624",
+      address: "597 Lake Place, Roy, Louisiana, 1850",
+    },
+    {
+      _id: "5eabb773c16bb2ef3382bc62",
+      age: 39,
+      name: "Goodman Webster",
+      gender: "male",
+      company: "SUREPLEX",
+      email: "goodmanwebster@sureplex.com",
+      phone: "+1 (995) 542-2952",
+      address: "153 Gain Court, Shepardsville, Alabama, 5073",
+    },
+  ];
+  return (
+    <Grid container>
+      <Grid item sm={12}>
+        <Typography variant="h3" component="h3">
+          Data tabel
+        </Typography>
+        <Typography variant="subtitle1">For more example visite : </Typography>
+        <Typography variant="body1">https://github.com/jbetancur/react-data-table-component#demo-and-examples</Typography>
+        <Typography variant="body1">https://jbetancur.github.io/react-data-table-component/?path=/story/general--kitchen-sink</Typography>
+        <Typography variant="h5">Data Generator : </Typography>
+        <Typography variant="body1">https://www.mockaroo.com/</Typography>
+      </Grid>
+      <Grid item sm={12}>
+        <Datatable title="Example" columns={columns} data={data} pagination />
+      </Grid>
+    </Grid>
+  );
+};

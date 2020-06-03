@@ -1,0 +1,7 @@
+export const INIT_FETCH_DATA_LINE = "INIT_FETCH_DATA_LINE";
+export const FETCH_DATA_LINE = "FETCH_DATA_LINE";
+
+export const INIT_FETCH_DATA_PIE = "INIT_FETCH_DATA_PIE";
+export const FETCH_DATA_PIE = "FETCH_DATA_PIE";
+
+export const ERROR = "ERROR";
