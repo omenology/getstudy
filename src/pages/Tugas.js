@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from "react";
+import React from "react";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import {
@@ -10,7 +10,6 @@ import {
   ExpansionPanelSummary,
   ExpansionPanelDetails,
 } from "@material-ui/core/";
-import { GetApp, CalendarToday, ListAlt } from "@material-ui/icons";
 
 import Card from "../components/card/card";
 

@@ -4,6 +4,7 @@ import DashboardPage from "./pages/Dashboard";
 import Datatable from "./pages/Datatable";
 import Animation from "./pages/Animation/Animation";
 import Tugas from "./pages/Tugas";
+import UploadTugas from "./pages/UploadTugas";
 
 import { Dashboard, TableChart, GraphicEq } from "@material-ui/icons";
 
@@ -31,5 +32,11 @@ export default [
     path: "/Tugas",
     icon: <TableChart />,
     component: Tugas,
+  },
+  {
+    title: "Upload Tugas",
+    path: "/Upload-Tugas",
+    icon: <TableChart />,
+    component: UploadTugas,
   },
 ];

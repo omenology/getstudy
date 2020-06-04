@@ -1,5 +1,4 @@
-import React, { useEffect, useCallback } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
 
 import {
   makeStyles,
@@ -10,10 +9,9 @@ import {
   Card,
   CardContent,
   CardActionArea,
-  CardActions,
   CardMedia,
 } from "@material-ui/core/";
-import { GetApp, CalendarToday, ListAlt } from "@material-ui/icons";
+import { GetApp } from "@material-ui/icons";
 
 // import Card from "../components/card/card";
 
