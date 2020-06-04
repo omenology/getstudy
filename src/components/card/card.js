@@ -21,16 +21,16 @@ const useStyle = makeStyles((theme) => ({
     backgroundColor: "white",
     boxShadow: "2px 1px 5px lightgrey",
   },
-  jumbotron: {
-    margin: "none",
-    borderRadius: "0px",
-    borderBottom: "1px solid lightgrey",
-    boxShadow: "0px 2px 4px -1px lightgrey, 0px 4px 5px 0px red",
-  },
+
   card: {
     height: "100%",
     display: "flex",
     flexDirection: "column",
+  },
+  cardSoal: {
+    margin: "2% 10%",
+    height: "auto",
+    boxShadow: "2px 1px 8px lightgrey",
   },
   content: {
     flex: 1,
@@ -57,7 +57,7 @@ export default (props) => {
         [classes.variantWarning]: props.variantWarning,
         [classes.variantError]: props.variantError,
         [classes.cardBackground]: props.cardBackground,
-        [classes.jumbotron]: props.jumbotron,
+        [classes.cardSoal]: props.cardSoal,
       })}
     >
       {header}
