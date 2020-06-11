@@ -1,15 +1,11 @@
 import React, { useEffect, useCallback } from "react";
-import { Jumbotron, Button } from "react-bootstrap/";
 import { makeStyles } from "@material-ui/core/";
 import { useDropzone } from "react-dropzone";
+import Card from "../components/card/card";
 
 const useStyle = makeStyles((theme) => ({
   button: {
     textTransform: "capitalize",
-  },
-  Jumbotron: {
-    margin: "auto 10%",
-    backgroundColor: "#e9f2fe",
   },
   tengah: {
     display: "flex",
@@ -42,7 +38,7 @@ const Tugas = (props) => {
   return (
     <React.Fragment>
       <div className={classes.tengah}>
-        <Jumbotron className={classes.Jumbotron}>
+        <Card jumbotronSmall>
           <h1 className="text-center">Upload Tugas</h1>
           <p className="text-center">
             This is a simple hero unit, a simple jumbotron-style component for
@@ -59,7 +55,7 @@ const Tugas = (props) => {
             <h4>Files</h4>
             <ul>{files}</ul>
           </aside>
-        </Jumbotron>
+        </Card>
       </div>
     </React.Fragment>
   );

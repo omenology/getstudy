@@ -35,6 +35,22 @@ const useStyle = makeStyles((theme) => ({
   content: {
     flex: 1,
   },
+  jumbotron: {
+    width: "100%",
+    padding: "2rem 1rem",
+    marginBottom: "2rem",
+    backgroundColor: "#e9f2fe",
+    borderRadius: ".3rem",
+    boxShadow: "none",
+  },
+  jumbotronSmall: {
+    margin: "0 10%",
+    padding: "2rem 1rem",
+    marginBottom: "2rem",
+    backgroundColor: "#e9f2fe",
+    borderRadius: ".3rem",
+    boxShadow: "none",
+  },
 }));
 
 export default (props) => {
@@ -58,6 +74,8 @@ export default (props) => {
         [classes.variantError]: props.variantError,
         [classes.cardBackground]: props.cardBackground,
         [classes.cardSoal]: props.cardSoal,
+        [classes.jumbotron]: props.jumbotron,
+        [classes.jumbotronSmall]: props.jumbotronSmall,
       })}
     >
       {header}

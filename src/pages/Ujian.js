@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from "react";
-import { Jumbotron, Row, Col, Container } from "react-bootstrap/";
+import { Row, Col, Container } from "react-bootstrap/";
 import {
   makeStyles,
   Radio,
@@ -12,10 +12,6 @@ import Card from "../components/card/card";
 import SpeedDials from "../components/SpeedDials";
 
 const useStyle = makeStyles((theme) => ({
-  Jumbotron: {
-    margin: "auto 10%",
-    backgroundColor: "#e9f2fe",
-  },
   tengah: {
     display: "flex",
     alignItems: "center",
@@ -32,13 +28,13 @@ const Tugas = (props) => {
   return (
     <React.Fragment>
       <div className={classes.tengah}>
-        <Jumbotron className={classes.Jumbotron}>
+        <Card jumbotronSmall>
           <h1 className="text-center">Ujian Mata Pelajaran</h1>
           <p className="text-center">
             This is a simple hero unit, a simple jumbotron-style component for
             calling extra attention to featured content or information.
           </p>
-        </Jumbotron>
+        </Card>
       </div>
       <Card cardSoal>
         <Row>
